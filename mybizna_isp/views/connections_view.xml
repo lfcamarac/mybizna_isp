@@ -96,7 +96,7 @@
             <field name="code">env.get('mybizna.isp.connections').processExpiry()</field>
         </record>
 
-        <record model="ir.actions.act_window" id="mybizna_isp.connections_action_window">
+<record model="ir.actions.act_window" id="mybizna_isp.connections_action_window">
             <field name="name">Connections</field>
             <field name="res_model">mybizna.isp.connections</field>
             <field name="view_mode">tree,form</field>
@@ -122,17 +122,4 @@
         <menuitem name="Process Billing Cycle" id="mybizna_isp.process_billing" parent="mybizna_isp.menu_action" action="mybizna_isp.action_process_billing" sequence="5"/>
         <menuitem name="Process Expired" id="mybizna_isp.process_expiry" parent="mybizna_isp.menu_action" action="mybizna_isp.action_process_expiry" sequence="5"/>
     </data>
-</odoo>
-
-    <!-- Top menu item -->
-
-    <menuitem name="Connections" id="mybizna_isp.connections" parent="mybizna_isp.menu_root" action="mybizna_isp.connections_action_window" sequence="1"/>
-
-    <menuitem name="Process All(-new) Connections" id="mybizna_isp.process_all_connections" parent="mybizna_isp.menu_action" action="mybizna_isp.action_process_new_connections" sequence="5"/>
-    <menuitem name="Process New Connections" id="mybizna_isp.process_new_connections" parent="mybizna_isp.menu_action" action="mybizna_isp.action_process_all_connections" sequence="5"/>
-    <menuitem name="Process Billing Cycle" id="mybizna_isp.process_billing" parent="mybizna_isp.menu_action" action="mybizna_isp.action_process_billing" sequence="5"/>
-    <menuitem name="Process Expired" id="mybizna_isp.process_expiry" parent="mybizna_isp.menu_action" action="mybizna_isp.action_process_expiry" sequence="5"/>
-
-
-  </data>
 </odoo>
